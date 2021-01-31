@@ -1,5 +1,7 @@
-FROM python:3.5-onbuild
+FROM python:3.8
 
-EXPOSE 8000
+WORKDIR /code
 
-ENTRYPOINT ["python", "/usr/src/app/app.py"]
+COPY src/ .
+
+ENTRYPOINT ["python", "./app.py"]
