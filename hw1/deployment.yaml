@@ -14,7 +14,7 @@ spec:
        spec:
           containers:
           - name: hello-py
-            image: hello-py:v1
+            image: olegtrygub/otushw:hw1v2
             ports:
               - name: web 
                 containerPort: 80
